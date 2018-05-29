@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Stoke', serif;
+  overflow: hidden;
+}
+
+html, body{
+  height: 100%;
+  background: #b5c8a2;
+}
+
+.navbar{
+    height: 55px;
+    width: 100%;
+    text-align: right;
+    background: #e8e7e3;
+    padding-top: 15px;
+    border-bottom: 3px solid #747371;
+}
+
+a {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #090502;
+}
+
+a:hover {
+    color: #666664;
+    text-shadow: 0px 2px 5px #a2ccc8;
+}
+
+#title-area{
+  background: url('images/intro.png') no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.name{
+  position: absolute;
+    font-size: 2.55vw;
+    color: #383737;
+    left: 36vw;
+    top: 7vw;
+}
+.ability{
+    position: absolute;
+    color: #8e8f8ab8;
+    font-size: 2.5vw;
+    left: 40vw;
+    top: 13.55vw;
+}
+
+.about{
+    position: absolute;
+    color: #a8a89ee8;
+    font-size: 2.5vw;
+    left: 80vw;
+    top: 22.35vw;
+}
+
+.projects{
+    position: absolute;
+    color: #9e8cb6;
+    font-size: 2.5vw;
+    left: 26vw;
+    top: 32.75vw;
+}
+
+.contact{
+    position: absolute;
+    color: #608261;
+    font-size: 2.5vw;
+    left: 59vw;
+    top: 35.15vw;
+}
+
+#About{
+  }
