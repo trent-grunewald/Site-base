@@ -1,0 +1,97 @@
+/* About wallpaper https://wall.alphacoders.com/big.php?i=717781*/
+/* https://alpha.wallhaven.cc/wallpaper/89360*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Stoke', serif;
+}
+
+html, body{
+  height: 100%;
+  background: #f8fcfb;
+}
+
+.navbar{
+    height: 55px;
+    width: 100%;
+    text-align: right;
+    padding-top: 15px;
+}
+
+a {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #658987;
+}
+
+a:hover {
+    color: #f8fcfb;
+    text-shadow: 0px 30px 3px #739b97;
+    transition: .5s ease-in-out;
+}
+
+#title-area{
+  background: url('images/intro.jpg') no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.name{
+  position: absolute;
+    font-size: 2.55vw;
+    color: #446f73;
+    left: 38.35vw;
+    top: 15vw;
+}
+.ability{
+    position: absolute;
+    color: #0f1619;
+    font-size: 2.5vw;
+    left: 43vw;
+    top: 18vw;
+}
+
+#about{
+  border-top: 7px solid transparent;
+  border-image: linear-gradient(to right, #0b1316, #578386, #0b1316);
+  border-image-slice: 1;
+  background: #f8fcfb;
+}
+
+  .container{
+    margin: 5% 25%;
+    background: #548186;
+    padding: 20px;
+    letter-spacing: 2px;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to right, #548186, #fff, #548186);
+    border-image-slice: 1;
+    border-radius: 10px;
+  }
+
+.sexy-pic{
+  align-items: center;
+  border-radius: 90px;
+  display: block;
+  margin: 5px auto;
+  border: 2px solid white;
+}
+
+.about-me{
+
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+
+#projects{
+  border: 7px solid transparent;
+  border-image: linear-gradient(to right, #fff, #000, #fff);
+  border-image-slice: 1;
+  background: #f8fcfb;
+}
