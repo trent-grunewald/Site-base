@@ -1,73 +1,102 @@
+/* About wallpaper https://wall.alphacoders.com/big.php?i=717781*/
+/* https://alpha.wallhaven.cc/wallpaper/89360*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Stoke', serif;
-  overflow: hidden;
+  font-family: 'Cormorant SC', serif;
 }
 
 html, body{
-  background: #b5c8a2;
-  height: 1030px;
+  height: 100%;
+  background: #f8fcfb;
 }
 
-.left{
-  background: red;
-
+.navbar{
+    height: 55px;
+    width: 100%;
+    text-align: right;
+    padding-top: 15px;
 }
 
-.nav{
-  text-align: right;
-  background: linear-gradient(to right, rgba(240, 240, 238, 0), rgb(171, 199, 143));
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #f2f1ef00, #9c98979e);
-  border-image-slice: 1;
+a {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: #658987;
 }
 
-.link{
-  text-align: right;
-  font-size: 1.5vw;
-  color: #356374;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-a:hover{
-  text-shadow: 0px 2px 5px #737391;
+a:hover {
+    color: #f8fcfb;
+    text-shadow: 0px 30px 3px #739b97;
+    transition: .5s ease-in-out;
 }
 
 #title-area{
-  background: url('images/intro2.png') no-repeat;
-  background-size: 100%;
-  height: 1030px;
+  background: url('images/intro.jpg') no-repeat;
+  background-size: 100% auto;
+  height: 100%;
   width: auto;
   position: relative;
 }
 
 .name{
   position: absolute;
-    font-size: 2.55vw;
-    color: #383737;
-    left: 36vw;
-    top: 12vw;
+    font-size: 3.10vw;
+    color: #446f73;
+    left: 38.20vw;
+    top: 15vw;
 }
 .ability{
     position: absolute;
-    color: #737391;
+    color: #0f1619;
     font-size: 2.5vw;
-    left: 40vw;
-    top: 21.55vw;
-}
-vw;
+    left: 44.25vw;
+    top: 18vw;
 }
 
-.contact{
-    position: absolute;
-    color: #608261;
-    font-size: 2.5vw;
-    left: 59vw;
-    top: 35.15vw;
+#about{
+  border-top: 7px solid transparent;
+  border-image: linear-gradient(to right, #0b1316, #64808b, #0b1316);
+  border-image-slice: 1;
+  background: #f8fcfb;
 }
 
-#About{
+  .container{
+    margin: 5% 25%;
+    background: #548186;
+    padding: 20px;
+    letter-spacing: 2px;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to right, #548186, #fff, #548186);
+    border-image-slice: 1;
+    border-radius: 10px;
   }
+
+.sexy-pic{
+  align-items: center;
+  border-radius: 90px;
+  display: block;
+  margin: 5px auto;
+  border: 2px solid white;
+}
+
+.about-intro{
+  display: block;
+  text-align: center;
+}
+
+.about-me{
+
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+
+#projects{
+  border: 7px solid transparent;
+  border-image: linear-gradient(to right, #fff, #000, #fff);
+  border-image-slice: 1;
+  background: #f8fcfb;
+}
