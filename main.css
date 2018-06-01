@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.navbar{
+  height: 55px;
+  width: 100%;
+  text-align: right;
+  padding-top: 5px;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, transparent, transparent, transparent, transparent, white);
+  border-image-slice: 1;
+  background: linear-gradient(to right, transparent,transparent,transparent, #303d4a);
+}
+
+a {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #262626;
+  text-shadow: 2px 2px 8px #679dab;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #8194a3;
+    color: #5f9aae;
+    transition: .5s ease-in-out;
+    text-shadow: 2px 2px 8px #679dab;
+}
+
+#title-area{
+    background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-644744.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.titles{
+  width: 35%;
+  height: 30%;
+  position: relative;
+  margin-left: auto;
+  margin-top: 15%;
+  margin-right: auto;
+  border: 5px solid white;
+  background-image: linear-gradient(transparent, #654f4f00),linear-gradient(transparent, transparent),radial-gradient(#bed6eeb5, #90b4d475, #ffffff00);
+  border-radius: 30px;
+}
+
+.name{
+  position: absolute;
+  font-size: 3.57vw;
+  color: #6897c5;
+  margin: 5%;
+  border-bottom: 5px solid trans#222a27;
+  border-bottom: 7px solid transparent;
+  border-image: linear-gradient(to right, transparent, #ffffff, transparent);
+  border-image-slice: 1;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #2c4656;
+}
+
+.ability{
+  position: absolute;
+  color: #262626;
+  font-size: 4vw;
+  letter-spacing: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #528593;
+}
+
+#about{
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to right, #01bafd, #d945cb, #4dfe35);
+  border-image-slice: 1;
+  background: #f8fcfb;
+}
+
+  .container{
+    margin: 5% 25%;
+    background: radial-gradient(#f8fcfb 20%, #8eaab5, #3f6163, #0b1316);
+    padding: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+  }
+
+.sexy-pic{
+  align-items: center;
+  border-radius: 90px;
+  display: block;
+  margin: 5px auto;
+  border: 2px solid white;
+}
+
+.about-intro{
+  display: block;
+  text-align: center;
+}
+
+.about-me{
+
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+
+#projects{
+
+}
+
+.my-projects{
+  margin: 5% 25%;
+  width: 50%;
+}
+
+.card{
+  display: inline-block;
+}
