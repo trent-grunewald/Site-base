@@ -1,77 +1,105 @@
-/* About wallpaper https://wall.alphacoders.com/big.php?i=717781*/
-/* https://alpha.wallhaven.cc/wallpaper/89360*/
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html, body{
   height: 100%;
-  background: #f8fcfb;
+  background: #f4f4f4;
 }
 
 .navbar{
-    height: 55px;
-    width: 100%;
-    text-align: right;
-    padding-top: 15px;
+  height: 55px;
+  width: 100%;
+  text-align: right;
+  padding-top: 5px;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, transparent, transparent, transparent, transparent, white);
+  border-image-slice: 1;
+  background: linear-gradient(to right, transparent,transparent,transparent, #303d4a);
 }
 
 a {
-    padding: 10px;
-    font-weight: 300;
-    font-size: 1.75rem;
-    text-decoration: none;
-    color: #658987;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #262626;
+  text-shadow: 2px 2px 8px #679dab;
 }
 
 a:hover {
-    color: #f8fcfb;
-    text-shadow: 0px 30px 3px #739b97;
+    text-decoration: underline;
+    text-decoration-color: #8194a3;
+    color: #5f9aae;
     transition: .5s ease-in-out;
+    text-shadow: 2px 2px 8px #679dab;
 }
 
 #title-area{
-  background: url('images/intro.jpg') no-repeat;
-  background-size: 100% auto;
-  height: 100%;
-  width: auto;
+    background: url('images/intro4.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.titles{
+  width: 35%;
+  height: 30%;
   position: relative;
+  margin-left: auto;
+  margin-top: 15%;
+  margin-right: auto;
+  border: 5px solid white;
+  background-image: linear-gradient(transparent, #654f4f00),linear-gradient(transparent, transparent),radial-gradient(#bed6eeb5, #90b4d475, #ffffff00);
+  border-radius: 30px;
 }
 
 .name{
   position: absolute;
-    font-size: 3.10vw;
-    color: #446f73;
-    left: 38.20vw;
-    top: 15vw;
+  font-size: 3.5vw;
+  color: #6897c5;
+  margin: 5%;
+  width: 90%;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 5px solid trans#222a27;
+  border-bottom: 7px solid transparent;
+  border-image: linear-gradient(to right, transparent, #ffffff, transparent);
+  border-image-slice: 1;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #2c4656;
 }
+
 .ability{
-    position: absolute;
-    color: #0f1619;
-    font-size: 2.5vw;
-    left: 44.25vw;
-    top: 18vw;
+  position: absolute;
+  color: #262626;
+  font-size: 3vw;
+  letter-spacing: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25%;
+  width: 80%;
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #528593;
 }
 
 #about{
-  border-top: 7px solid transparent;
-  border-image: linear-gradient(to right, #0b1316, #64808b, #0b1316);
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to right, #01bafd, #d945cb, #4dfe35);
   border-image-slice: 1;
   background: #f8fcfb;
+  padding: 1%;
 }
 
   .container{
     margin: 5% 25%;
-    background: #548186;
+    background: radial-gradient(#f8fcfb 20%, #8eaab5, #3f6163, #0b1316);
     padding: 20px;
     letter-spacing: 2px;
-    border: 7px solid transparent;
-    border-image: linear-gradient(to right, #548186, #fff, #548186);
-    border-image-slice: 1;
     border-radius: 10px;
   }
 
@@ -95,8 +123,21 @@ a:hover {
 }
 
 #projects{
-  border: 7px solid transparent;
-  border-image: linear-gradient(to right, #fff, #000, #fff);
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to right, #fafafa, #d945cb, #fafafa);
   border-image-slice: 1;
-  background: #f8fcfb;
+}
+
+.my-projects{
+  margin: 5% 20%;
+  text-align: center;
+}
+
+.card{
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.card-img{
+  padding: 10px;
 }

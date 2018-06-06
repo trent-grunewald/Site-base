@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  background: #f8fcfb;
+}
+
+.navbar{
+  height: 55px;
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+    background: linear-gradient(to right, transparent,transparent, #e6e6e6);
+}
+
+a {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #272883;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ec8bff;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+#title-area{
+  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-621636.jpg) no-repeat;
+  height: 100%;
+  position: relative;
+  text-shadow: 2px 2px 8px #c24adc;
+}
+
+.titles{
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.name{
+  position: absolute;
+  font-size: 3vw;
+  color: #dc78fe;
+  left: 20%;
+  top: 15%;
+  letter-spacing: 4px;
+  background-image: linear-gradient(transparent, #654f4f00),linear-gradient(transparent, transparent),linear-gradient(to right, #fde6ff, #fb4cff, #2b0b3a);
+  background-repeat: no-repeat;
+  background-position: 100% 95%;
+  background-size: 100% 5px;
+  border-radius: 50px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #292e9c;
+}
+
+.ability{
+  position: absolute;
+  color: #4f0e66;
+  font-size: 3vw;
+  letter-spacing: 4px;
+  left: 30%;
+  top: 29%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #dc78fe;
+}
+
+#about{
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to right, #01bafd, #d945cb, #4dfe35);
+  border-image-slice: 1;
+  background: #f8fcfb;
+}
+
+  .container{
+    margin: 5% 25%;
+    background: radial-gradient(#f8fcfb 20%, #8eaab5, #3f6163, #0b1316);
+    padding: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+  }
+
+.sexy-pic{
+  align-items: center;
+  border-radius: 90px;
+  display: block;
+  margin: 5px auto;
+  border: 2px solid white;
+}
+
+.about-intro{
+  display: block;
+  text-align: center;
+}
+
+.about-me{
+
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+
+#projects{
+
+}
+
+.my-projects{
+  margin: 5% 25%;
+  width: 50%;
+}
+
+.card{
+  display: inline-block;
+}
