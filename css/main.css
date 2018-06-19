@@ -42,6 +42,10 @@ a:hover {
     background: url('images/intro4.jpg') no-repeat center;
     background-size: cover;
     height: 100%;
+<<<<<<< HEAD
+=======
+    position: relative;
+>>>>>>> 43de116599df210a46a2cae20b02a6916f3c21ad
 }
 
 .titles{
@@ -54,7 +58,10 @@ a:hover {
   border: 5px solid white;
   background-image: linear-gradient(transparent, #654f4f00),linear-gradient(transparent, transparent),radial-gradient(#bed6eeb5, #90b4d475, #ffffff00);
   border-radius: 30px;
+<<<<<<< HEAD
   overflow: auto;
+=======
+>>>>>>> 43de116599df210a46a2cae20b02a6916f3c21ad
 }
 
 .name{
@@ -85,7 +92,10 @@ a:hover {
   text-align: center;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #528593;
+<<<<<<< HEAD
   display: inline;
+=======
+>>>>>>> 43de116599df210a46a2cae20b02a6916f3c21ad
 }
 
 #about{
