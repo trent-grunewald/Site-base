@@ -1,0 +1,124 @@
+.nav{
+  padding: 20px;
+  letter-spacing: 2px;
+  display: flex;
+  font-family: $ff-body;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &-item{
+    margin-left: auto;
+    color: black;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+
+    &:hover{
+    box-shadow: 1px 1px 6px 5px black;
+    }
+  }
+}
+
+.glitch{
+  color: white;
+  font-size: 1em;
+  position: relative;
+  margin: 0 auto;
+}
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+      content: attr(data-text);
+    position: absolute;
+    /* left: -2px; */
+    text-shadow: 1px 0 #8b1d90;
+    top: -10;
+    color: white;
+    background: #131313;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+.landing{
+  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-375080.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  min-height: 620px;
+
+  &-body{
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    width: auto;
+    display: flex;
+  }
+}
+
+.name{
+  font-family: $ff-title;
+  font-size: 5em;
+  text-shadow: 2px 2px 6px #e34c6b;
+  color: transparent;
+  margin-top: -3.25em;
+  transition: 2s ease-in-out;
+}
+
+.web{
+  font-family: $ff-title;
+  position: absolute;
+  top: 57%;
+  font-size: 4em;
+  text-shadow: 2px 2px 5px #e7b377;
+  color: transparent;
+  margin-top: -2em;
+  transition: 2s ease-in-out;
+}
+
+.body-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .name{
+    transition: 2s;
+    color: #e34c6b;
+    font-size: 7em;
+    margin-top: -1em;
+    text-shadow: 2px 2px 5px #131313;
+  }
+  &:hover .web{
+    transition: 2s;
+    color: #e7b377;
+    margin-top: -.5em;
+    text-shadow: 2px 2px 2px #9e2ac1;
+  }
+}
