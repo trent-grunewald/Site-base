@@ -3,8 +3,6 @@
   letter-spacing: 2px;
   display: flex;
   font-family: $ff-body;
-  margin-left: auto;
-  margin-right: auto;
   
   &-item{
     margin-left: auto;
@@ -18,52 +16,57 @@
   }
 }
 
-.glitch{
-  color: white;
-  font-size: 1em;
+.glitch {
   position: relative;
-  margin: 0 auto;
-}
-@keyframes noise-anim{
-  $steps:20;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
+  color: white;
+  mix-blend-mode: lighten;
+
+  &:before,
+  &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: black;
+      clip: rect(0, 0, 0, 0);
+  }
+  
+  &:before {
+      left: -1px;
+      text-shadow: 1px 0 rgba(red,0.7);
+  }
+
+  &:after {
+      left: 1px;
+      text-shadow: -1px 0 rgba(blue,0.7);
+  }
+
+  &:hover {
+    &:before {
+      text-shadow: 4px 0 rgba(red,0.7);
+      animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+    }
+    &:after {
+      text-shadow: -5px 0 rgba(blue,0.7);
+      animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
     }
   }
-}
-.glitch:after{
-  content:attr(data-text);
-  position:absolute;
-  left:2px;
-  text-shadow:-1px 0 red;
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0);
-  animation:noise-anim 2s infinite linear alternate-reverse;
 }
 
-@keyframes noise-anim-2{
-  $steps:20;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
+@keyframes glitch-loop-1 {
+  0% { clip: rect(36px, 9999px, 9px, 0) }
+  25% { clip: rect(25px, 9999px, 99px, 0) }
+  50% { clip: rect(50px, 9999px, 102px, 0) }
+  75% { clip: rect(30px, 9999px, 92px, 0) }
+  100% { clip: rect(91px, 9999px, 98px, 0) }
 }
-.glitch:before{
-      content: attr(data-text);
-    position: absolute;
-    /* left: -2px; */
-    text-shadow: 1px 0 #8b1d90;
-    top: -10;
-    color: white;
-    background: #131313;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+
+@keyframes glitch-loop-2 {
+  0% { top: -1px; left: 1px; clip: rect(65px, 9999px, 119px, 0) }
+  25% { top: -6px; left: 4px; clip: rect(79px, 9999px, 19px, 0) }
+  50% { top: -3px; left: 2px; clip: rect(68px, 9999px, 11px, 0) }
+  75% { top: 0px; left: -4px; clip: rect(95px, 9999px, 53px, 0) }
+  100% { top: -1px; left: -1px; clip: rect(31px, 9999px, 149px, 0) }
 }
 
 
@@ -113,12 +116,12 @@
     color: #e34c6b;
     font-size: 7em;
     margin-top: -1em;
-    text-shadow: 2px 2px 5px #131313;
+    text-shadow: 2px 20px 5px #131313;
   }
   &:hover .web{
     transition: 2s;
     color: #e7b377;
     margin-top: -.5em;
-    text-shadow: 2px 2px 2px #9e2ac1;
+    text-shadow: 2px 7px 2px #9e2ac1;
   }
 }
